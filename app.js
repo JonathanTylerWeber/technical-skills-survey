@@ -20,3 +20,13 @@ function dedupe(numbers) {
     return arr
 }
 // dedupe([1,2,4,4,1,2]) // [1,2,4]
+
+function isPangram(str) {
+    for (let char of 'abcdefghijklmnopqrstuvwxyz'){
+        if (!str.includes(char)){
+            return false
+        }
+    }
+    return true
+}
+// isPangram("the quick brown fox jumps over the lazy dog")
